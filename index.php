@@ -20,8 +20,17 @@
     <main class="container">
         <section class="row">
             <div claas="col-12">
-                <h1>Php Badwords</h1>
-
+                <h1 class="text-center mt-3">Php Badwords</h1>
+                <form action="./censoredtext.php" method="GET">
+                    <div class="mb-3">
+                        <label for="wordCensored" class="form-label">Parola da Censurare</label>
+                        <input type="text" class="form-control" id="wordCensored" placeholder="Inserire parola da censurare">
+                    </div>
+                    <div class="mb-3">
+                        <label for="textToChange" class="form-label">Testo da Modificare</label>
+                        <textarea class="form-control" id="textToChange" rows="3"></textarea>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
