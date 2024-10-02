@@ -27,9 +27,22 @@ $text = $_GET["textToChange"];
                 <h1 class="text-center mt-3">Php Badwords</h1>
                 <p>
                     <h2>Testo inserito</h2>
-                    <?php echo $text ?>
+                    <?php 
+                        echo $text;
+                    ?>
                     <h3>Lunghezza testo</h3>
-                    <?php echo strlen($text)?>
+                    <?php
+                        echo strlen($text);
+                    ?>
+                    <h3>Testo modificato con la parola censurata</h3>
+                    <?php
+                        $censoredText = str_ireplace($word, "***",$text);
+                        echo $censoredText;
+                   ?>
+                    <h3>Lunghezza testo censurato</h3>
+                    <?php 
+                        echo strlen($censoredText);
+                    ?>
                 </p>
             </div>
         </section>
