@@ -28,6 +28,8 @@ $text = $_GET["textToChange"];
                 <p>
                     <h2>Testo inserito</h2>
                     <?php echo $text ?>
+                    <h3>Lunghezza testo</h3>
+                    <?php echo strlen($text)?>
                 </p>
             </div>
         </section>
