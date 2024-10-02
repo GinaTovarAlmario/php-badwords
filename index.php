@@ -30,6 +30,8 @@
                         <label for="textToChange" class="form-label">Testo da Modificare</label>
                         <textarea class="form-control" id="textToChange" rows="3"></textarea>
                     </div>
+                    <button type="submit" class="btn btn-success">Send</button>
+                    <button type="reset" class="btn btn-danger">Reset</button>
                 </form>
             </div>
         </section>
